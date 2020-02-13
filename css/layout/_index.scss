@@ -1,0 +1,47 @@
+.hero {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 1fr 3fr 3fr 1fr;
+	height: 80vh;
+	background-image: $gradBG;
+}
+
+.hero h1 {
+	font-family: $sans;
+	font-size: 3rem;
+	grid-column: 2;
+	grid-row: 2;
+	line-height: 4rem;
+	color: rgba(white, 0.9);
+	span {
+		line-height: 0;
+		font-size: 1.3em;
+		padding-left: 1vw;
+	}
+	.heroSpan2 {
+		padding-left: 2vw;
+	}
+}
+.heroBtns {
+	grid-row: 3;
+	grid-column: 1 /span 3;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	a {
+		text-align: center;
+	}
+}
+.heroDeviders {
+	grid-row: 4;
+	grid-column: 1 /span 3;
+	overflow: hidden;
+	img {
+		width: 100vw;
+	}
+}
+.contentIndex {
+	background-color: black;
+	min-height: 100vh;
+}

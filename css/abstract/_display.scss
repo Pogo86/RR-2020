@@ -1,0 +1,19 @@
+$lPhone-width: 576px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin lPhone {
+	@media only screen and (min-width: #{$lPhone-width}) and (max-width: #{$tablet-width - 1px}) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media only screen and (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+		@content;
+	}
+}
+@mixin desktop {
+	@media only screen and (min-width: #{$desktop-width}) {
+		@content;
+	}
+}

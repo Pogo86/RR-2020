@@ -1,0 +1,12 @@
+$orange: orange;
+$steelBlue: #3587a4;
+$babyBlue: #88ccf1;
+$lightBlue: #c1dff0;
+$green: #2d848a;
+$lightGreen: #2d898b;
+
+$gradBlue: linear-gradient($babyBlue, $lightBlue);
+$gradGreen: linear-gradient($green, $lightGreen);
+$gradBG: linear-gradient($steelBlue, $lightGreen);
+
+$bg: $steelBlue;
