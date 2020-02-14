@@ -1,15 +1,16 @@
+// About the hero on the index
+
 .hero {
 	display: grid;
-	grid-template-columns: 1fr 3fr 1fr;
-	grid-template-rows: 1fr 3fr 3fr 1fr;
-	height: 80vh;
+	grid-template-rows: 1fr 2fr 2fr 2fr;
+	max-height: 60vh;
 	background-image: $gradBG;
 }
 
 .hero h1 {
+	padding-left: 10vw;
 	font-family: $sans;
 	font-size: 3rem;
-	grid-column: 2;
 	grid-row: 2;
 	line-height: 4rem;
 	color: rgba(white, 0.9);
@@ -24,7 +25,6 @@
 }
 .heroBtns {
 	grid-row: 3;
-	grid-column: 1 /span 3;
 	display: flex;
 	justify-content: space-between;
 	margin-left: 10vw;
@@ -35,13 +35,22 @@
 }
 .heroDeviders {
 	grid-row: 4;
-	grid-column: 1 /span 3;
 	overflow: hidden;
+	position: relative;
 	img {
 		width: 100vw;
+		position: absolute;
+		bottom: 0;
 	}
 }
+
+// About the main content.
 .contentIndex {
+	color: white;
 	background-color: black;
 	min-height: 100vh;
+	h4{
+		padding: 0;
+		margin: 0;
+	}
 }
